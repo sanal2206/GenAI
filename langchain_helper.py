@@ -1,12 +1,13 @@
+
+
 from dotenv import load_dotenv
 import os
-
 load_dotenv()
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
 os.environ['GOOGLE_API_KEY']=GOOGLE_API_KEY
 
-
+"""Google gemini flast 2.5 lite is using as LLM model"""
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
